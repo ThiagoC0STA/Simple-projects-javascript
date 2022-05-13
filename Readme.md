@@ -8,9 +8,9 @@
 ## To do list
 
 [x] codar os mini projetos.
-[x] refatorar os códigos, deixando o mais clean possivel.
+[x] refatorar os códigos deixando o mais clean possivel.
 [x] estudar todos os códigos
 
 ### Obs
 
-- Pra deixar claro que o meu conhecimento vai além de apenas isso, esses são códigos antigos, que eu tinha esquecido de colocar no git, mas decidi colocar.
+- Pra deixar claro que o meu conhecimento vai além de apenas isso, esses são códigos antigos que eu tinha esquecido de colocar no git, mas decidi colocar.
