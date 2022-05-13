@@ -1,0 +1,199 @@
+/*-----------------------------Fonts-----------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/*-----------------------------Global-----------------------------*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.25rem;   
+}
+
+html , body {
+    height: 100vh;
+    width: 100vw;
+}
+
+body {
+    background-color: #923cb5;
+    background-image: linear-gradient(147deg, #923cb5 0%, #460061 74%);
+    background-size: cover; 
+    background-repeat: no-repeat;
+}
+
+
+/*-----------------------------Header-----------------------------*/
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+    background-color: #232330;    
+    box-shadow: 0px 0px 8px rgb(0, 0, 0);
+    min-height: 10vh;
+}
+
+span {
+    margin-left: 2em;
+    display: flex;
+    font-size: 1.8rem;
+}
+
+#dev {
+    color: #8c49df;
+}
+
+h1 {
+    text-shadow: 1px 2px 2px rgb(107, 107, 107);
+    color: #f3f4f4;
+}
+
+a {
+    font-size: 1.2rem;
+    color: #e7edf3;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+a.fa-brands {
+    font-size: 1.6rem;
+}
+
+a:hover {
+    color: #8c49df;
+}
+
+#div1 {
+    display: flex;
+    gap: 20px;
+    font-size: 1.3rem;
+}
+
+#div2 {
+    display: flex;
+    gap: 20px;
+    margin-right: 2em;
+}
+
+#bars {
+    visibility: hidden;
+    position: absolute;
+    right: 40px;
+    font-size: 2em;
+    transition: 0s;
+    color: #8c49df; 
+    cursor: pointer;
+}
+
+.fa-envelope-open-text {
+    font-size: 1.6em;
+}
+
+#div1.active, #div2.active {
+    transform: translateX(0);
+    visibility: visible;
+    opacity: 1;
+}
+
+a.active-animation, i.active-animation {
+    animation-name: navLinkFade;
+    animation-duration: 2s;
+}
+
+/*-----------------------------Adaptable-----------------------------*/
+
+@media (max-width: 1200px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    #div1 {
+        background-color: #232330;  
+
+        top: 100px;
+        right: 0;
+        
+        padding: 4em 20px 0 20px;
+
+        width: 50vw;
+        height: 90vh;
+    }
+
+    #div1, #div2 {
+        position: absolute;
+        justify-content: center;
+        transform: translateX(100%);
+        transition: transform 0.4s ease-in;
+        visibility: hidden;
+        opacity: 0;
+        transition: 1s;
+    }
+
+    #div2 {
+        right: -32px;
+        top: 85vh;
+        width: 50vw;
+    }
+
+    #bars {
+        visibility: visible;
+    }
+
+    i {
+        font-size: 2.5em;
+    }
+}
+
+@media (max-width: 1000px) {
+    #div1 {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 4em;
+        gap: 40px;
+    }
+
+    i {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 600px) {
+
+    #div1 {
+        font-size: 1em;
+    }
+    #div2 {
+        flex-direction: column;
+        top: 65vh;
+        align-items: center;
+    }
+
+    i {
+        font-size: 1.6em;
+    }
+
+    span {
+        margin-left: 0;
+    }
+}
+
+/*-----------------------------Keyframes-----------------------------*/
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        pacity: 1;
+        transform: translateX(0)
+    }
+}

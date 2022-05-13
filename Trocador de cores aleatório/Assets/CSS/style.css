@@ -1,0 +1,102 @@
+/*-------------------------------Fonts-------------------------------*/
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+
+/*-------------------------------Global-------------------------------*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.25rem;
+}
+
+a {
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+html, body {
+    height: 98%;
+}
+
+/*-------------------------------Buttuns-------------------------------*/
+
+.top-btns:hover {   
+    color: hsl(205deg 78% 60%);
+    cursor: pointer;
+}
+
+button {
+    font-size: 1rem;
+    padding: 0.80rem 1.30rem;
+    max-width: fit-content;
+    background-color: transparent;
+    text-transform: uppercase;
+    color: #222;
+    transition: all 0.4s linear;
+    font-weight: bold;
+    border: 2px solid #222;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #222;
+    color: #fff;
+    transition: all 0.4s linear;
+}
+
+/*-------------------------------Header-------------------------------*/
+
+#top-page {
+    display: flex;
+    justify-content: space-evenly;
+    height: 5rem;
+    align-items: center;
+}
+
+nav {
+    box-shadow:  0 5px 30px rgba(0, 0, 0, 0.2);
+}
+
+#flipper {
+    color: hsl(205deg 78% 60%);
+    font-size: 1.2rem;
+}
+
+#simple-hex {
+    display: flex;
+    gap: 20px;
+}
+
+/*-------------------------------Main-------------------------------*/
+
+main {
+    background-color: hsl(210, 36%, 96%);
+    min-height: calc(100vh - 5rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    background-color: #000000;
+    color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-size: 3rem;
+}
+
+#blue-h1 {
+    color: hsl(205, 78%, 60%);
+}
+
+#middle-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
