@@ -1,7 +1,7 @@
 # Aqui temos mini projetos, completamente simples em JS, apenas para aprender na prática.
 
 ## Porque desses mini projetos?
-- Porque todos eles, mesmo que pouco ensinam a lidar com varias coisas do JavaScript, como eventos e adição e remoção de certas classes
+- Porque todos eles, mesmo que pouco... ensinam a lidar com varias coisas do JavaScript, como eventos e adição e remoção de certas classes
 
 - Mesmo sendo simples varios deles, todos tem um aprendizado.
 
